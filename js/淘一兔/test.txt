@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="http://www.taomiemie.com/resource/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="http://www.taomiemie.com/resource/Scripts/json2.js"></script>
+    
+    <title>淘宝信誉查询_淘宝信用查询_淘宝小号查询_淘宝黑号查询 - 淘宝信誉查询 - 淘一兔(taoyitu)卖家助手工具箱</title>
+    <meta name="keywords" content="淘一兔taoyitu淘宝信誉查询,淘宝信誉查询,买家信誉查询,淘宝小号查询,信誉,小号查询,淘宝工具,淘宝卖家工具,淘宝信誉,信誉查询,淘宝黑号查询,淘宝联盟,淘宝助理" />
+    <meta name="description" content="淘一兔taoyitu信誉查询网站,淘宝信誉查询,免费提供淘宝买家信誉查询、淘宝卖家信誉查询、淘宝信用等级查询等各项淘宝信誉查询服务，是淘宝隐式降权、淘宝小号查询必备工具箱" />
+	
+    <script src="/Js/rate?v=pV-9ZMHDLLcS83YcRp112qwGCgpIWNwQGnS5aYyCGN41"></script>
+
+    <link href="/Css/rate?v=ernsA-13mxhd6VjEFSyV7_98iU5h9fOgAlusaLUl8rE1" rel="stylesheet"/>
+
+
+    <script>
+        $(function () {
+            $("#menu li").eq(0).addClass("sel");
+        })
+    </script>
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<script language="javascript">
+		if( top.location != self.location) top.location.href=self.location.href;
+	</script>
+</head>
+<body>
+    <div class="main" >
+	<div class="top_banner" >
+		
+				
+				
+				
+		
+		
+		
+	</div>
+	<div class="cb"></div>
+</div>
+<!--Float Banner-->
+<div class="float-banner banner-left">
+	<div class="banner-info">
+    	
+    </div>
+    <div class="banner-close">
+    	关闭
+    </div>
+</div>
+<div class="float-banner banner-right">
+	<div class="banner-info">
+    	
+    </div>
+    <div class="banner-close">
+    	关闭
+    </div>
+</div>
+<div class="fixed-banner-left">
+	<div class="banner-info">
+		
+	</div>
+	<a href="javascript:void(0)" class="fixed-left-close">关<br />闭</a>
+</div>
+<div class="fixed-banner-right">
+	<div class="banner-info">
+		
+	</div>
+	<a href="javascript:void(0)" class="fixed-right-close">关<br />闭</a>
+	
+</div>
+
+
+<style>
+.float-banner{ position:fixed; top:150px; _position:absolute; z-index:99999; width:120px;}
+.banner-left{ left:10px;}
+.banner-right{ right:10px;}
+.banner-info{ width:100%; float:left;}
+.banner-info img{ border:none;float:left;}
+.banner-close{ width:100%; float:left; margin:5px 0 0 0; background:#808080; text-align:center; font-size:12px; height:20px; line-height:20px; color:#FFF; cursor:pointer;}
+.fixed-banner-left{ position:fixed;left:10px;bottom:10px;_position:absolute; z-index:99999; width:220px;}
+.fixed-left-close{ position:absolute; background:#808080; color:#FFF; line-height:20px;top:0px; right:-24px; padding:5px;}
+.fixed-banner-right{ position:fixed;right:10px;bottom:10px;_position:absolute; z-index:99999; width:220px;}
+.fixed-right-close{ position:absolute; background:#808080; color:#FFF; line-height:20px;top:0px; left:-24px; padding:5px;}
+</style>
+<script>
+	$(".banner-close").click(function(){
+			$(".float-banner").hide();
+		})
+	$(".fixed-left-close").click(function(){
+		$(".fixed-banner-left").hide();
+	})
+	$(".fixed-right-close").click(function(){
+			$(".fixed-banner-right").hide();
+		})
+</script>
+    <div style="position: relative;">
+        <div id="menu">
+            <ul>
+                <li>
+                    <div class="APosition" id="NavSpan">
+                        <a class="a_title" href="/">
+                            <span>淘宝信用中差评查询</span>
+                        </a>
+                        
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <div class="APosition">
+                        <a class="a_title" href="/jq.html">
+                            <span>店铺隐式降权查询</span>
+                        </a>
+                        <div class="line"></div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="APosition">
+                        <a class="a_title" href="/sort.html">
+                            <span>店铺关键字排名查询</span>
+                        </a>
+                        <div class="line"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="APosition">
+                        <a class="a_title" href="/dt.html">
+                            <span>店铺动态评分查询</span>
+                        </a>
+                        <div class="sub_nav_div">
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="APosition">
+                        <a class="a_title" href="/time.html">
+                            <span>产品下架时间查询</span>
+                        </a>
+                        <div class="sub_nav_div">
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="APosition">
+                        <a class="a_title" href="/cishu.html">
+                            <img src="/images/flag/new.gif" width="9" height="14" alt="最新" />
+                            <span>商品浏览量查询</span></a>
+                        <div class="sub_nav_div">
+                            <div class="sub_nav">
+                                <a href="/viewlist_1_1.html">商品浏览次数排行榜</a>
+                                <a href="/viewlist_2_1.html">商品销量排行榜</a>
+                                <a href="/viewlist_3_1.html">商品收藏排行榜</a>
+                                <a href="/viewlist_4_1.html">商品最新浏览查询记录</a>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="APosition">
+                        <a class="a_title" href="/kuaidi.html">
+                            <span>全国物流查询</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="header">
+        <h2 style="position: absolute; left: 0px;  width:100%;top: 135px; text-align:center;font-size: 14px; color: #FFF;font-weight:normal;display:none;">
+			当前查询人数较多，卡住或者错误请CTRL+F5刷新页面后查询！
+        </h2>
+        <div class="top_info" style=" position:relative;">
+            <div id="logo">
+                <h1 title="淘一兔"><a href="/">
+                    <img src="/images/logo/logo_new.png" width="266" height="53" alt="淘一兔" /></a></h1>
+            </div>
+            <div style="position:absolute; font-size:14px; color:#FFF; text-align:center; width:100%; left:0px;top:5px; z-index:6;">查询慢、卡顿、一直加载中请CTRL+F5刷新或直接百度一下 <a href="http://www.taomiemie.com/" target="_blank" style="color:#FFF;">淘咩咩</a>
+            <!-- <br/>发布刷单任务请联系 <a style=" vertical-align:middle;" href="http://wpa.qq.com/msgrd?v=3&uin=656602052&site=qq&menu=yes" target="_blank"><img border="0" src="http://wpa.qq.com/pa?p=2:656602052:45"></a> -->
+            </div>
+            <div id="Roll" style="display:none;">
+                <div class="num"></div>
+                <div class="num"></div>
+                <div class="num"></div>
+                <div class="num"></div>
+                <div class="num"></div>
+                <div class="num"></div>
+                <div class="num"></div>
+                <div class="num"></div>
+            </div>
+        </div>
+    </div>
+    <div class="header_div"></div>
+    <div class="cb"></div>
+    <input name="__RequestVerificationToken" type="hidden" value="ToIycN1j9J4xzEtpuHxbOlbSk6IAUieFWnjik1I1LPXJciL52te3FWHCBAvLHVlBOhvFMSIXrQRfZZMNBZ47etbl2PeOvqKG2zsBSbyYrRKUM-1mw3NzByJa1RvxSKas8788n-bpiFZVilw1KRA9R3jxt_6-ptwsI9fibMJt6vw1" />
+<div id="SearchArea">
+    <div class="search_input" style="width:970px;">
+        <label>请输入淘宝帐号：</label><div class="search_txt">
+            <input type="text" id="txt_name" />
+        </div>
+        <input id="search_btn" type="button" class="search_btn" value="查询" />
+        <div class="remeber">
+            <input id="remember_sel" type="checkbox" checked="checked" title="当下次打开页面时显示上次查询的用户与关键字" /><label for="remember_sel" title="当下次打开页面时显示上次查询的用户与关键字">保存输入信息</label>
+        </div>
+		<a href="http://www.22kbw.com/Index/R/654517" target="_blank" style="color:#B20000;text-decoration: underline; line-height:30px;">真实快递，淘宝+拼多多0.6元 [拼多多补单]</a>
+        
+    </div>
+</div>
+
+<div id="IntroductInfo">
+    <div class="top rateTitle">
+		<h2 class="title_name">淘宝信用/中差评查询</h2>
+		<a href="" target="_blank"  style="line-height:30px;color:#6a0000;text-decoration: underline; display:none; ">
+		</a>
+	</div>
+    <div class="content">
+         <h2>淘宝信用查询：</h2>
+         <p>
+            <span>请在输入框内输入淘宝帐号，并点击查询</span>
+            <span>1、注册时间小于30天的，被认定为小号/新号，有可能是骗子，应当谨慎交易，免得赚几块钱换来一个中差评。</span>
+            <span>2、淘一兔可以查询买家中差评数量以及中差评信息，如果该用户的比例超过一定的比例，则有可能是中差评师，要十分注意了。</span>
+            <span>3、经常刷的小号，当信用点数超过20点(常购物的买家大号除外)，有可能这个号被淘宝列入黑名单，他再拍的东西有可能会被认为虚假交易，再刷会有降权风险。</span>
+        </p>
+    </div>
+</div>
+
+<div id="UserInfo"></div>
+<div id="RateInfo">
+    <div id="msgProcess"></div>
+    <div class="nickName">
+        淘宝<span id="userType">买家</span>：<span id="rate_userName">加载中..</span> <span id="wangwang"></span> <span id="vip_info" style="display:none;"></span> <span id="tmall_info"  ></span> <span id="activity_info" style="vertical-align: middle;"></span>
+    </div>
+    <ul class="nick_info">
+        <li>注册时间：<span id="rate_userTime" class="s1"></span></li>
+        <li>实名认证：<span id="rate_userIdent" class="s2">支付宝实名认证</span></li>
+        <li>店铺信息：<span id="rate_sellerLink" class="s3">暂时无此店铺</span></li>
+        <li>当前主营：<span id="rate_shopType" class="s3">暂无</span></li>
+        <li>所在地区：<span id="rate_userArea" class="s4"></span><div style="display:none;margin: 0 0 0 100px;vertical-align: middle;">性别：<span id="rate_userSex" class="s4"></span></div></li>
+        <li>给出评价：<span class="s5"><a id="zhongpingLink" target="_blank" href="http://www.taoyitu.com/ratelist_1_1.html"><img src="/images/credit/normal.gif" width="16" height="15" />
+            中评(<span id="buyerTotalNormalCount">加载中.</span>)</a> <a id="chapingLink" target="_blank" href="http://www.taoyitu.com/ratelist_2_1.html">
+                <img src="/images/credit/bad.gif" width="19" height="14" />
+                差评(<span id="buyerTotalBadCount">加载中.</span>)</a>     给他人中差评比例:(<span id="buyerNormalBadPerNumber" class="red">0%</span>)</span></li>
+        <li><a href="http://www.fakonbao.com/" target="_blank" style="color:green;"><b style="color:#F00;">[广告]</b>&nbsp;代发真实快递空包！！京东拼多多批量下单发货！方便快捷！</a></li>
+		<li><a href="http://zsj.zhongjindou.cn/zjd/generalize/jd.html" target="_blank" style="color:#0000ff;"><b style="color:#F00;">[广告]</b>&nbsp;真人手淘搜索，提升权重，全国一号一IP，安全不降权，降权包赔。</a></li>
+		<li><a href="https://docs.qq.com/doc/BsoI3O3JnbfQ1aW1JQ1eGigB0s12PH1aLnoS4x4lLY2p7FD62Nmxar1BrArf1HdHP04xfa0n0?localnum=1" target="_blank" style="color:green;"><b style="color:#F00;">[广告]</b>&nbsp;☆【低佣精刷安全补单、被查包赔、大鱼塘1人1号1手机、高权重】★</a></li>
+		<li><a href="http://1ydq.com/tg/" target="_blank" style="color:#0000ff;"><b style="color:#F00;">[广告]</b>&nbsp;【标签化刷单】提升权重，各地ip刷手，恶意退款，虚假降权包赔。</a></li>
+		<li><a href="http://ceshibox.com/" target="_blank" style="color:green;"><b style="color:#F00;">[广告]</b>&nbsp;精选人群补单加速流量+良心佣金。</a></li>
+		
+    </ul>
+    <div class="count_down_box">
+       <div class="count_down">
+       </div>
+    </div>
+    <div class="nick_lever">安全等级加载中...</div>
+    <div class="index_banner">
+        <!-- <a href="http://www.imaidai.com/" target="_blank" ><img src="http://www.taomiemie.com/resource/images/banner/mdw-banner-25.jpg" /></a> -->
+    </div>
+	<div class="index_text_banner">
+		<p><a href="https://docs.qq.com/doc/BsoI3O3JnbfQ1aW1JQ1eGigB0s12PH1aLnoS4x4lLY2p7FD62Nmxar1BrArf1HdHP04xfa0n0?localnum=1" target="_blank" style="color:#0000ff;font-size:12px;"><b style="color:#F00;">[广告]</b>&nbsp;&nbsp;☆【低佣精刷安全补单、被查包赔、大鱼塘1人1号1手机、高权重】★</a></p>
+		<p><a href="http://www.yungang66.com/" target="_blank" style="color:green;font-size:12px;"><b style="color:#F00;">[广告]</b>&nbsp;高权重标签人群、精准补单、多维度矩阵验号、实时赛马、全网最低！</a></p>
+	</div>
+	<div class="rate_info_bottom" style="margin:-3px 0 0 0;">
+        <div class="buyer_info">
+            <h1>买家信誉： <span id="buyer_ratecount"></span></h1>
+            <ul class="rate_time_list">
+                <li><span class="s1">最近一周：</span><span id="buyer_weekRateGood">加载中..</span> 点 &nbsp;&nbsp;<span class="s1">周平均：</span><span id="buyer_averageNum"></span> 单<span class="warn" id="sellerInfoWarnWeek"></span></li>
+                <li>最近一月：<span id="buyer_monthRateGood">加载中..</span> 点 <span style="color: #f00;" id="sellerInfoWarnMonth"></span></li>
+                <li>最近半年：<span id="buyer_yearRateGood">加载中..</span> 点</li>
+                <li>半年以前：<span id="buyer_yearOldRateGood">加载中..</span> 点</li>
+                <li>当前IP地址：<span id="buyer_IpAddress">加载中..</span></li>
+            </ul>
+        </div>
+        <div class="seller_info">
+            <h1>卖家信誉： <span id="seller_ratecount"></span></h1>
+            <ul class="rate_time_list">
+                <li><span class="s1">最近一周：</span><span id="seller_weekRateGood">加载中..</span>点</li>
+                <li>最近一月：<span id="seller_monthRateGood">加载中..</span> 点</li>
+                <li>最近半年：<span id="seller_yearRateGood">加载中..</span> 点</li>
+                <li>半年以前：<span id="seller_yearOldRateGood">加载中..</span> 点</li>
+                <li>当前查询时间：<span id="buyer_CurrentTime">加载中..</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="main">
+       <div class="footer_banner">
+			
+				
+        </div>
+		
+		<div id="FriendLink" >
+            <span>友情链接：</span>
+            <ul>
+                <li>
+                   <a href="http://www.taonienie.com/" target="_blank">淘捏捏</a>
+                </li>
+                <li>
+                   <a href="http://www.zhenshua.com/" target="_blank">真刷淘宝卖家论坛</a>
+                </li>
+                <li>
+                   <a href="https://www.zhuashi.com/" target="_blank">抓试免费试用网</a>
+                </li>
+                <li>
+                   <a href="https://www.daiyunying.com/" target="_blank">电商代运营之家</a>
+                </li>
+                <li>
+                   <a href=" http://www.51liuliangshenqi.com/  " target="_blank">51流量神器</a>
+                </li>
+                <li>
+                   <a href=" http://www.91taozhushou.com/" target="_blank">淘宝刷收藏</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cb"></div>
+    </div>
+    
+<div id="footer">
+	<div class="share">
+		<!-- Baidu Button BEGIN -->
+		<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+			<span class="bds_more">分享到：</span>
+			<a class="bds_tsina"></a>
+			<a class="bds_sqq"></a>
+			<a class="bds_qzone"></a>
+			<a class="bds_tqf"></a>
+			<a class="bds_taobao"></a>
+			<a class="bds_tqq"></a>
+			<a class="bds_qq"></a>
+			<a class="bds_renren"></a>
+			<a class="bds_t163"></a>
+			<a class="bds_kaixin001"></a>
+			<a class="bds_douban"></a>
+			<a class="bds_bdhome"></a>
+			<a class="bds_meilishuo"></a>
+			<a class="bds_ty"></a>
+			<a class="bds_baidu"></a>
+			<a class="bds_tieba"></a>
+			<a class="bds_thx"></a>
+			<a class="shareCount"></a>
+		</div>
+	   <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6644249"></script>
+		<script type="text/javascript" id="bdshell_js"></script>
+		<script type="text/javascript">
+			document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
+		</script>
+		<!-- Baidu Button END -->
+	</div>
+
+	<div class="RecentlyPeople">
+		<p>最近查询：
+			<span id="PeopleSearch">
+				
+
+			</span>
+		</p>
+	</div>
+
+	<div class="announcement">
+		<p><a href="/about.html" style="color: red; font-weight: bold" target="_blank">淘一兔简介</a> 淘一兔服务声明：本站与淘宝网无任何关系 所有原创内容来自 淘宝网 欢迎 <a onclick="addfavorite()" class="fb red">加入收藏</a></p>
+		<p>广告声明：淘一兔不能保证在网站投放的每个广告安全性和可靠性！你与本站第三方广告联系进行资金交易需 谨慎，发生任何损失或被骗与淘一兔没关！ </p>
+		<p>如果您在使用的过程中遇到什么问题或者有任何好的建议请加入淘一兔官方群：108016717 提出，谢谢！ </p>
+		<p>网站合作、发布刷单任务请联系 <a style=" vertical-align:middle;" href="http://wpa.qq.com/msgrd?v=3&uin=297466614&site=qq&menu=yes" title="淘一兔网站合作" target="_blank"><img border="0" src="http://wpa.qq.com/pa?p=2:297466614:45" alt="淘一兔网站合作" title="淘一兔网站合作"></a></p>
+		<p>网站备案号: <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备17034298号-1</a></p>
+	</div>
+	<div id="cnzz">
+		
+	
+		
+
+
+		
+		
+		
+		
+		
+		<script src="http://s4.cnzz.com/stat.php?id=1261631176&web_id=1261631176" language="JavaScript"></script>
+		
+		<a id="jsl_speed_stat0" href="http://www.yunaq.com/#zid=5b600dcf45475e46870564a0" target="_blank">知道创宇云安全</a><script src="//static.yunaq.com/static/js/stat/picture_stat.js" charset="utf-8" type="text/javascript"></script>
+	</div>
+</div>
+
+
+<script>
+$(function(){
+	var imgBaseHost = 'http://www.taomiemie.com/resource/images/banner';
+	var banner = {
+		topBanner: [
+			{
+				link: 'https://shimo.im/docs/C8CTRQxw3GRp9GYT/read',
+				imgSrc : imgBaseHost + '/zqyh3.gif',
+			},
+			{
+				link: 'http://t.cn/AiR9FA64',
+				imgSrc : imgBaseHost + '/rqjl-31.jpg',
+			},
+			{
+				link: 'http://www.91taozhushou.com/collect/',
+				imgSrc : imgBaseHost + '/91zs2-14.gif',
+			},
+			{
+				link: 'https://www.baoxiniao666.com/',
+				imgSrc : imgBaseHost + '/bxxn2-28.gif',
+			}
+		],
+		fLBanner : [{
+			link : 'http://www.51lingla.com/',
+			imgSrc : imgBaseHost + '/linyou-2-12.jpg'
+		}],
+		fRBanner : [{
+			link : 'http://www.51kongbaoo.com/',
+			imgSrc : imgBaseHost + '/51kongbao2-12.jpg'
+		}],
+		fixBannerLeft: [{
+			link : 'http://zsj.zhongjindou.cn/zjd/generalize/ct.html',
+			imgSrc : imgBaseHost + '/zdd-23.gif'
+		}],
+		fixBannerRight: [{
+			link : 'http://www.shangjin8.cn/sj.html?from=tyt',
+			imgSrc : imgBaseHost + '/sdw-8.jpg'
+		}],
+		footerBanner : [
+			{
+				link :'http://tk16591451.icoc.bz/',
+				imgSrc :imgBaseHost + '/dkn13-14.gif'
+			},
+			{
+				link :'http://www.cs2016.cn/',
+				imgSrc :imgBaseHost + '/chaoshuai-1.gif'
+			},
+			{
+				link :'http://koltui.com/',
+				imgSrc :imgBaseHost + '/dbgsd11-20.gif'
+			},
+			{
+				link :'http://www.renqidianzhang.com/',
+				imgSrc :imgBaseHost + '/renqdz-28.gif'
+			},
+			{
+				link :'http://www.225kb.cn/',
+				imgSrc :imgBaseHost + '/225kb-28.gif'
+			},
+			{
+				link :'http://www.6kongbao.com?ruid=623',
+				imgSrc :imgBaseHost + '/6kongbao2-18.gif'
+			},
+			{
+				link :'http://www.zhijianhe.com/reg.htm',
+				imgSrc :imgBaseHost + '/ppt-25.gif',
+				isRows : true
+			},
+			{
+				link :'http://www.xieshoua.com/',
+				imgSrc :imgBaseHost + '/xieshou2-31.jpg',
+				isRows : true
+			}
+		],
+		indexBanner : [
+			{
+				link :'http://www.imaidai.com/',
+				imgSrc :imgBaseHost + '/mdw-banner-25.jpg',
+			}
+		]
+	}
+	var linkTpl = '<a class="fl" href="" target="_blank"><img src="" /></a>';
+	var setBannerHTML = function(obj,data){
+		obj.html('');
+		for(var i=0;i<data.length;i++){
+			var link = $(linkTpl);
+			if((i+1) % 2 === 0 && !data[i].isRows){
+				link.addClass('ml10');
+			}
+			link.attr('href',data[i].link);
+			link.find('img').attr('src',data[i].imgSrc);
+			obj.append(link);
+		}
+	}
+	
+	// TOP Banner
+	setBannerHTML($('.top_banner'),banner.topBanner);
+	// Float Banner
+	setBannerHTML($('.banner-left .banner-info'),banner.fLBanner);
+	setBannerHTML($('.banner-right .banner-info'),banner.fRBanner);
+	// FixBanner
+	setBannerHTML($('.fixed-banner-left .banner-info'),banner.fixBannerLeft);
+	setBannerHTML($('.fixed-banner-right .banner-info'),banner.fixBannerRight);
+	
+	// Footer Banner
+	setBannerHTML($('.footer_banner'),banner.footerBanner);
+	
+	// Index Banner
+	setBannerHTML($('.index_banner'),banner.indexBanner);
+})
+</script>
+    <script>
+        window.onscroll = into;
+        function into() {
+            var TopNum = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+            if (TopNum >= "160") {
+                $("#menu").css({ "position": "fixed", "top": "0", "filter": "alpha(opacity=90)", "opacity": "0.90", "-moz-opacity": "0.70" });
+            }
+            else {
+                $("#menu").css({ "position": "absolute", "top": "58px", "filter": "alpha(opacity=100)", "opacity": "1", "-moz-opacity": "1" });
+            };
+        }
+
+
+        $("#menu li").hover(function () {
+            $("#menu li").removeClass("li_hover");
+            $(this).addClass("li_hover");
+            $(this).children(".APosition").children(".sub_nav_div").show();
+
+        }, function () {
+            $("#menu li").removeClass("li_hover");
+            $(this).children(".APosition").children(".sub_nav_div").hide();
+        })
+
+
+        function addfavorite() {
+            url = "http://www.taoyizhu.com";
+            title = "淘一兔卖家工具(差评师、隐式降权、宝贝排名)";
+            try { // IE
+                window.external.addFavorite(url, title);
+            } catch (e) {
+                try { // Firefox
+                    window.sidebar.addPanel(title, url, "");
+                } catch (e) {
+                    if (/Opera/.test(window.navigator.userAgent)) { // Opera
+                        a.rel = "sidebar";
+                        a.href = url;
+                        return true;
+                    }
+                    alert('加入收藏失败，请使用 Ctrl+D 进行添加');
+                }
+            }
+            return false;
+        }
+        function set_homepage(a, url) {
+            var tip = '您的浏览器不支持此操作\n请使用浏览器的“选项”或“设置”等功能设置首页';
+            if (/360se/i.test(window.navigator.userAgent)) {
+                alert(tip);
+                return false;
+            }
+            url = url || a.href;
+            try {
+                a.style.behavior = 'url(#default#homepage)';
+                a.setHomePage(url);
+            } catch (e) {
+                alert(tip);
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

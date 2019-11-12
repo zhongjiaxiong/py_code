@@ -1,7 +1,6 @@
 import requests
 from lxml import etree
 import execjs
-import re
 import json
 url1 = 'http://www.taoyizhu.com'
 url2 = 'http://www.taoyizhu.com/GetPlanToken'
@@ -53,7 +52,6 @@ def main():
         '__RequestVerificationToken': __RequestVerificationToken[0],
         'tokens': f'{code},{jiami}',
     }
-    # print(data2)
     res4 = requests.post(url3,data=data2,headers=headers).text
     print(res4)
 

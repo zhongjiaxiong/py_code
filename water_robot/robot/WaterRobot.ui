@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>897</width>
+    <height>801</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" rowstretch="3,5" columnstretch="4,5,0">
+   <item row="0" column="0" colspan="3">
+    <widget class="QWidget" name="widget_top" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0">
+      <item>
+       <widget class="QLabel" name="label_cam1">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>前摄</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QWidget" name="widget_right" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="PlotWidget" name="graphicsView_waterdepth"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_deepth">
+        <property name="text">
+         <string>水深传感器</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PlotWidget" name="graphicsView_turbidity"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_turbidity">
+        <property name="text">
+         <string>浊度传感器</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PlotWidget" name="graphicsView_ph"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_ph">
+        <property name="text">
+         <string>ph值</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget_left" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_cam">
+        <property name="leftMargin">
+         <number>7</number>
+        </property>
+        <property name="topMargin">
+         <number>7</number>
+        </property>
+        <property name="rightMargin">
+         <number>7</number>
+        </property>
+        <property name="bottomMargin">
+         <number>7</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="btn_cma1">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>打开前摄</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_light">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>打开灯光</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_sensor">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>打开传感器</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QGridLayout" name="gridLayout_opration">
+        <property name="leftMargin">
+         <number>7</number>
+        </property>
+        <property name="topMargin">
+         <number>7</number>
+        </property>
+        <property name="rightMargin">
+         <number>7</number>
+        </property>
+        <property name="bottomMargin">
+         <number>7</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="btn_font">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>前</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="btn_left">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>左</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="btn_back">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>后</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="btn_right">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>右</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="btn_float">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>上浮</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="btn_dive">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>下潜</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_login">
+        <property name="leftMargin">
+         <number>7</number>
+        </property>
+        <property name="topMargin">
+         <number>7</number>
+        </property>
+        <property name="rightMargin">
+         <number>7</number>
+        </property>
+        <property name="bottomMargin">
+         <number>7</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_ip">
+            <property name="text">
+             <string>ip : </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_ip"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_pwd">
+            <property name="text">
+             <string>端口:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_pwd"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_connectToPi">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>连接到树莓派</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_font</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>font()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>286</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>585</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_left</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>left()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>727</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>778</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_back</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>279</x>
+     <y>733</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>571</x>
+     <y>792</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_right</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>right()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>445</x>
+     <y>740</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>676</x>
+     <y>793</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_dive</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>dive()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>419</x>
+     <y>617</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>631</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_float</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>float()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>97</x>
+     <y>640</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>665</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_cma1</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>font_cam()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_light</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>open_light()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>286</x>
+     <y>496</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_connectToPi</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>link_to_pi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>409</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>406</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_sensor</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>open_sensor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>432</x>
+     <y>513</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>511</x>
+     <y>530</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>font()</slot>
+  <slot>back()</slot>
+  <slot>left()</slot>
+  <slot>right()</slot>
+  <slot>float()</slot>
+  <slot>dive()</slot>
+  <slot>font_cam()</slot>
+  <slot>back_cam()</slot>
+  <slot>open_light()</slot>
+  <slot>link_to_pi()</slot>
+  <slot>open_sensor()</slot>
+ </slots>
+</ui>

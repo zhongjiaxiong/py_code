@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>695</width>
+    <height>502</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_font">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>280</y>
+     <width>93</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>前</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_back">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>390</y>
+     <width>93</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>后</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_right">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>390</y>
+     <width>93</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>右</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_left">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>390</y>
+     <width>93</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>左</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>41</y>
+     <width>281</width>
+     <height>211</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_font</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>font()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>293</x>
+     <y>318</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_left</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>left()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>431</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>428</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_back</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>306</x>
+     <y>428</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>317</x>
+     <y>467</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_right</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>right()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>443</x>
+     <y>415</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>485</x>
+     <y>425</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>font()</slot>
+  <slot>left()</slot>
+  <slot>back()</slot>
+  <slot>right()</slot>
+ </slots>
+</ui>

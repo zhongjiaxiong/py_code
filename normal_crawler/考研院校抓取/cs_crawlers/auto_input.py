@@ -8,11 +8,33 @@ import re
 import requests
 import time
 
+
+def save_uni_name():
+    headers = {
+        'User-Agent': ' Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36',
+        'Referer': 'http://www.cdgdc.edu.cn/webrms/pages/Ranking/xkpmGXZJ2016.jsp',
+        'Cookie': 'scrolls=300; JSESSIONID=35D8A1C40F981CF49B8F265057F67545; sto-id-20480-web_80=CBAKBAKMJABP; UM_distinctid=17048706dcf1e-01879567ff9ff9-313f69-1fa400-17048706dd043f; sto-id-20480-xww_webrms=CCAKBAKMEJBP; CNZZDATA2328862=cnzz_eid%3D1894230608-1581762577-%26ntime%3D1582168644'
+    }
+    url = 'http://www.cdgdc.edu.cn/webrms/pages/Ranking/xkpmGXZJ2016.jsp?yjxkdm=0812&xkdm=08'   #更改yjxkdm的值和xkdm的值就可以更改相应的学科
+    response = requests.get(url, headers=headers)
+    # print(response.text)
+    selector = parsel.Selector(response.text)
+    universitys = selector.re('[\u4e00-\u9fa5]{2,7}大学', response.text)
+    workbook = xlwt.Workbook(encoding='utf-8', style_compression=0)
+    sheet = workbook.add_sheet('university', cell_overwrite_ok=True)
+
+    for i in range(10, len(universitys)):
+        sheet.write(i - 10 + 1, 0, universitys[i])
+    workbook.save(r'cs_university.xls')
+
+
 def browser_init():
-    options = webdriver.FirefoxOptions
-    options.add_argument('-headless')
-    driver = webdriver.Firefox(options=options)
-    return driver
+    options = webdriver.FirefoxOptions()
+    # options.add_argument('-headless')
+    my_driver = webdriver.Firefox(options=options)
+    return my_driver
+
+
 def get_uni_name():      #从excel中得到大学的名称
     data = xlrd.open_workbook('cs_university.xls')
     table = data.sheet_by_index(0)
@@ -27,8 +49,8 @@ def get_uni_name():      #从excel中得到大学的名称
 
 def get_uni_url(driver,university_name):  #根据大学的名字获取研招网下该大学硕士招生网址
     try:
-
-        driver.get('https://yz.chsi.com.cn/zsml/queryAction.do')
+        driver.refresh()
+        driver.get('https://yz.chsi.com.cn/zsml/zyfx_search.jsp')
         s1 = Select(driver.find_element_by_css_selector('#mldm'))# 门类
         s1.select_by_value('zyxw')   #专业学位
         s2 = Select(driver.find_element_by_css_selector('#yjxkdm'))#专业领域
@@ -56,7 +78,7 @@ def get_uni_url(driver,university_name):  #根据大学的名字获取研招网�
     part_url = re.sub('&amp;','&',url_text)
     uni_url = 'https://yz.chsi.com.cn/' +part_url
     print('*' * 20 + '正在获取'+university_name+'数据' +'*'*20+'\n'*2)
-    driver.close()
+
     return uni_url
 
 
@@ -118,8 +140,6 @@ def save_info(sheet,exam_num,exam_info,uni_name):
         sheet.write(exam_num, i + 1, v)
 
 
-
-
 if __name__ == "__main__":
     driver = browser_init()
     university_name_gen= get_uni_name()
@@ -132,13 +152,11 @@ if __name__ == "__main__":
         exam_num = len(exam_urls)
         # print(university_name,+'专业条目数：'+str(exam_num))
         for i,url in zip(range(exam_num_total, exam_num_total+exam_num+1), exam_urls):
-            print('正在获取考试内容网址。。。。' + '\n' * 2)
             exam_info = get_infomation(url)
-            print('*' * 20 + '解析考试范围网址成功' + '*' * 20 + '\n' * 2)
             save_info(sheet, i, exam_info, university_name)
         exam_num_total += len(exam_urls)
         print('保存'+university_name+'数据成功')
         workbook.save('uni_info.xls')
-
+    print('全部数据保存成功')
 
 
